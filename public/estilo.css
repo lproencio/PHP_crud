@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin:  0;
+}
+
+div {
+    grid-area: logo;
+}
+
+header {
+    grid-area: cabecalho;
+}
+
+nav {
+    grid-area: navegacao;
+}
+
+main {
+    grid-area: conteudo;
+}
+
+footer {
+    grid-area: rodape;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 60px 1fr 50px;
+    grid-template-areas: 
+        'logo cabecalho'
+        'navegacao conteudo'
+        'navegacao rodape'
+}
+  
+@media(max-width: 580px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 60px 1fr 50px;
+        grid-template-areas:
+        "cabecalho"
+        "navegacao"
+        "conteudo"
+        "rodape";
+    }
+
+    div {
+        display: none;
+    }
+}
+
+.logo {
+    background: #000;
+}
+
+img {
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+header .header {
+    background: #fff;
+    white-space: nowrap;
+}
+
+header  {
+    margin: 15px 15px 15px 40%;
+}
+ header i {
+     margin-right: 5px;
+ }
+
+.nav {
+    background: #000;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    font-weight: 590;
+    padding: 15%;
+}
+
+nav a:hover {
+    background: linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+}
+
+nav i {
+    margin: auto 5px auto auto;
+}
+
+@media(max-width: 580px) {
+    .nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .nav a {
+      display: inline;
+      padding: 10px;
+      margin: 0px;
+    }
+  
+    .nav {
+      height: 100%;
+      justify-content: space-around;
+    }
+}
+
+.main {
+    background-color: #D8D8D8;
+    padding: 5px;
+}
+
+.tabela {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+th, td {
+    padding: 4px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+footer {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+}
+
+footer p {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.botao1 {
+    background-color: #FFFF00;
+    padding: 3%;
+    color: #000;
+}
+
+.botao2 {
+    background-color: #FF0000;
+    padding: 3%;
+    color: #000;
+
+}
+
+.botao3 {
+    background-color: #2E9AFE;
+    padding: 3%;
+    color: #000;
+
+}
+
+.formulario {
+    margin: 1%;
+    background-color: #fff;
+    padding: 4% 3% 3% 5%;
+    text-align: justify;
+    border-radius: 2%;
+}
+
+.cad{
+    width: 90%;
+    height: 25px;
+    margin: 0% 0% 2% 0%;
+}
+
+.radio {
+    margin: 1px;
+}
+
+.atracao {
+    border-radius: 3%;
+}
+
+.file {
+    margin: 1%;
+}
+
+.salvar {
+    background-color: #31a2b8;  
+    border-radius: 10%;
+    width: 50%;
+    height: 30px;
+    color: #000;
+}
+
+.lista {
+    margin: 1%;
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 1%;
+}
+
+.infor {
+    margin: 3%;
+}
